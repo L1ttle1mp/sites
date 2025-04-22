@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання квитків</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+<h1>Подія року: Концерт у вашому місті!</h1>
+<nav>
+<ul>
+<li><a href="#about-event">Про подію</a></li>
+<li><a href="#tickets">Квитки</a></li>
+<li><a href="#contact">Контакти</a></li>
+</ul>
+</nav>
+</header>
+<main class="skip-link" id="main-content">
+<section>
+<h2 id="about-event">Про подію</h2>
+ <p>Приєднуйтесь до незабутнього концерту із зірками української сцени. Це подія, яку не можна пропустити! Насолоджуйстесь живою музикою,
+неймовірною атмосферою та хорошим настроем.</p>
+<p><strong>Дата:</strong>25 березня 2025 року</p>
+<p><strong>Місце:</strong>Концертна зала "Україна", м. Київ</p>
+</section>
+<section id="tickets">
+    <h2 >Квитки</h2>
+    <p>Виберіть тип квитка та заповніть форму бронювання:</p>
+    <form action="/submit-ticket" method="post">
+        <select name="ticket-type" id="ticket-type" required>
+            <option value="standard">Стандартний-500 грн</option>
+            <option value="vip">VIP-1000 грн</option>
+        </select>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+        <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+        <input type="tel" id="phone" name="phone" placeholder="+380679233912" required>
+        <button type="submit">Забронювати</button>
+    </form>
+</section>
+<section id="contact">
+    <h2>Зв'язатися з нами</h2>
+    <p>Наші контакти якщо у вас є питання</p>
+    <address>
+        <p>Email: <a href="mailto:info@tickets.ua">info@tickets.ua</a></p>
+        <p>Номер телефону <a href="tel:+380679233912">+380 67 923 3912</a></p>
+    </address>
+</section>
+</main>
+<footer> &copy; 2025 Бронювання квитків. Усі права захищено</footer>
+</body>
+</html>
